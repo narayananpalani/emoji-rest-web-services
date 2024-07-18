@@ -2,8 +2,9 @@
 This is a sample application built to showcase emoji usage for the payments that are posted in social media
 
 Related Newsletter:
-https://www.linkedin.com/pulse/social-payment-innovations-narayanan-palani-alc0e/?trackingId=lcC%2FPR34T9euPiAXmxX8GA%3D%3D
-Credits "Spring Boot 3 Fundamentals" by Jesper de Jong at [Pluralsight](https://www.pluralsight.com/).
+[Linkedin](https://www.linkedin.com/pulse/social-payment-innovations-narayanan-palani-alc0e/?trackingId=lcC%2FPR34T9euPiAXmxX8GA%3D%3D)
+
+- Credits "Spring Boot 3 Fundamentals" by Jesper de Jong at [Pluralsight](https://www.pluralsight.com/).
 
 ## Building REST Web Services
 
@@ -30,6 +31,19 @@ On Windows:
 On macOS or Linux:
 
     ./mvnw spring-boot:run
+
+
+Note: 
+In case of error such as maven failures like ClassNotFoundException, build wrapper accordingly.
+E.g:
+
+    Error: Could not find or load main class org.apache.maven.wrapper.MavenWrapperMain
+    Caused by: java.lang.ClassNotFoundException: org.apache.maven.wrapper.MavenWrapperMain
+
+please use the command to rectify:
+
+    mvn -N io.takari:maven:wrapper
+
 
 Then you can use an HTTP client tool to call the web services. Examples using `curl`:
 
