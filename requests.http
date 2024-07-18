@@ -1,0 +1,24 @@
+GET localhost:8080/senders
+
+###
+
+GET localhost:8080/emojis?senderId=101
+
+###
+
+GET localhost:8080/emojis/501
+
+###
+
+GET localhost:8080/PaymentProducts?emojiId=501
+
+###
+
+POST localhost:8080/SendMoney
+Content-Type: application/json
+
+{"paymentId": 801, "senderName": "Jesper de Jong"}
+
+###
+
+DELETE localhost:8080/SendMoney/d6f47f7b-0b90-4af7-9e53-188e4d022827
